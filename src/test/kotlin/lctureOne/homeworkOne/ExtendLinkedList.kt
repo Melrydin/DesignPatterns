@@ -23,7 +23,7 @@ class ExtendLinkedList {
     }
 
     @Test
-    fun testPrependOnEmptyList(){
+    fun testPrepend_OnEmptyList(){
         linkedList.head = null
 
         linkedList.prepend(10)
@@ -40,7 +40,7 @@ class ExtendLinkedList {
     }
 
     @Test
-    fun testAppendOnLongerList(){
+    fun testAppend_OnLongerList(){
         linkedList.append(2)
 
         linkedList.append(3)
@@ -49,7 +49,7 @@ class ExtendLinkedList {
     }
 
     @Test
-    fun testAppendHeadIsNull(){
+    fun testAppend_HeadIsNull(){
         linkedList.head = null
 
         linkedList.append(10)
@@ -67,21 +67,21 @@ class ExtendLinkedList {
     }
 
     @Test
-    fun testInsertNewHead(){
+    fun testInsert_NewHead(){
         linkedList.insert(0,30)
 
         assertEquals(30, linkedList.head?.value)
     }
 
     @Test
-    fun testInsertOutOfList(){
+    fun testInsert_OutOfList(){
         linkedList.insert(30,30)
 
         assertEquals(30, linkedList.head?.next?.value)
     }
 
     @Test
-    fun testLInsertByABigList(){
+    fun testLInsert_ByABigList(){
         linkedList.append(2)
         linkedList.append(3)
         linkedList.insert(2,10)
@@ -90,7 +90,7 @@ class ExtendLinkedList {
     }
 
     @Test
-    fun testInsertOnEmptyListWithIndexOne(){
+    fun testInsert_OnEmptyListWithIndexOne(){
         linkedList.head = null
 
         linkedList.insert(1, 10)
