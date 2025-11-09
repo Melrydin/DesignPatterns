@@ -1,7 +1,5 @@
-package lctureOne.homeworkOne
+package lectureOne.homeworkOne
 
-import lectureOne.homeworkOne.LinkedList
-import lectureOne.homeworkOne.Node
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals

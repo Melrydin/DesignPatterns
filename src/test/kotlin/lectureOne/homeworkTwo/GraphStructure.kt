@@ -1,7 +1,5 @@
-package lctureOne.homeworkTwo
+package lectureOne.homeworkTwo
 
-import lectureOne.homeworkTwo.Graph
-import lectureOne.homeworkTwo.Node
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
