@@ -1,4 +1,4 @@
-package lectureOne.homeworkTwo
+package lecture1.homework2
 
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue

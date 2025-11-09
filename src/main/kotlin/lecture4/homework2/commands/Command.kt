@@ -1,4 +1,4 @@
-package lectureFour.homeworkTwo.commands
+package lecture4.homework2.commands
 
 interface Command {
     fun execute()

@@ -1,4 +1,4 @@
-package lectureOne.homeworkOne
+package lecture1.homework1
 
 class LinkedList<T>(var head : Node<T>?) {
     fun prepend(value : T) {

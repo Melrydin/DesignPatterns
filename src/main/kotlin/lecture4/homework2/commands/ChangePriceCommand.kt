@@ -1,6 +1,6 @@
-package lectureFour.homeworkTwo.commands
+package lecture4.homework2.commands
 
-import lectureFour.homeworkTwo.Item
+import lecture4.homework2.Item
 
 class ChangePriceCommand(private val item: Item, private val newPrice: Int): Command {
     private var oldPrice: Int = 0

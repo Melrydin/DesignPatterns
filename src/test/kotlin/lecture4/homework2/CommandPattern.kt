@@ -1,7 +1,7 @@
-package lectureFour.homeworkTwo
+package lecture4.homework2
 
-import lectureFour.homeworkTwo.commands.ChangeNameCommand
-import lectureFour.homeworkTwo.commands.ChangePriceCommand
+import lecture4.homework2.commands.ChangeNameCommand
+import lecture4.homework2.commands.ChangePriceCommand
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue

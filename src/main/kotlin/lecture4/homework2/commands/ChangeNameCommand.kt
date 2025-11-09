@@ -1,6 +1,6 @@
-package lectureFour.homeworkTwo.commands
+package lecture4.homework2.commands
 
-import lectureFour.homeworkTwo.Item
+import lecture4.homework2.Item
 
 class ChangeNameCommand(private var item: Item, private var newName: String): Command {
     private var oldName: String = ""

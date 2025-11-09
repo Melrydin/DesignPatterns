@@ -1,4 +1,4 @@
-package lectureOne.homeworkOne
+package lecture1.homework1
 
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

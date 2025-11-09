@@ -1,4 +1,4 @@
-package lectureOne.homeworkTwo
+package lecture1.homework2
 
 data class Node(val name: String)
 

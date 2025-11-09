@@ -1,6 +1,6 @@
-package lectureFour.homeworkTwo
+package lecture4.homework2
 
-import lectureFour.homeworkTwo.commands.Command
+import lecture4.homework2.commands.Command
 
 class Invoker {
     private var undoHistory: MutableList<Command> = mutableListOf()
