@@ -29,4 +29,30 @@ class StrategyTest {
         sortedList = bubbleSort.sort(a)
         assertEquals(mutableListOf(3, 2, 1), sortedList)
     }
+
+    @Test
+    fun testWrongTypeInput() {
+        val bubbleSort = BubbleSort(IntegerAscendingComparatorStrategy())
+        var wrongData = mutableListOf<Any>("A", "B")
+        bubbleSort.sort(wrongData)
+        assertEquals(mutableListOf("B", "A"), wrongData)
+
+        bubbleSort.comparatorStrategy = IntegerDescendingComparatorStrategy()
+        wrongData = mutableListOf("A", "B")
+        bubbleSort.sort(wrongData)
+        assertEquals(mutableListOf("B", "A"), wrongData)
+    }
+
+    @Test
+    fun testMixedTypeInput() {
+        val bubbleSort = BubbleSort(IntegerAscendingComparatorStrategy())
+        var wrongData = mutableListOf<Any>(1 , "B")
+        bubbleSort.sort(wrongData)
+        assertEquals(mutableListOf("B", 1), wrongData)
+
+        bubbleSort.comparatorStrategy = IntegerDescendingComparatorStrategy()
+        wrongData = mutableListOf(1 , "B")
+        bubbleSort.sort(wrongData)
+        assertEquals(mutableListOf("B", 1), wrongData)
+    }
 }
