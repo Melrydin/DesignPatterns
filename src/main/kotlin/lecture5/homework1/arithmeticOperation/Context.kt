@@ -1,4 +1,4 @@
-package lecture5.homework1
+package lecture5.homework1.arithmeticOperation
 
 class Context(var arithmeticOperation: ArithmeticOperation) {
     fun executeOperation(operand1: Int, operand2: Int): Int {
