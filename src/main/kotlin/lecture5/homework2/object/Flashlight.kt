@@ -5,14 +5,8 @@ import lecture5.homework2.`object`.States.StateOff
 
 class Flashlight {
 
-    var currentState: State
+    var currentState: State = StateOff
         internal set
-
-    init {
-        currentState = StateOff
-
-        this.turnOFF()
-    }
 
     fun press(){
         currentState.handlePress(this)
