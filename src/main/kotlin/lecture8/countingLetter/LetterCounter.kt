@@ -2,7 +2,7 @@ package lecture8.countingLetter
 
 import java.io.File
 
-class LetterCounter(val comparatorStrategy: CounterStrategy) {
+class LetterCounter(var comparatorStrategy: CounterStrategy) {
     fun countLetters(path: String): Number {
         return comparatorStrategy.letterCount(loadFile(path)).toLong()
     }

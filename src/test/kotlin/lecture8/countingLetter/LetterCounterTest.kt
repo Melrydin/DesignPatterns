@@ -20,9 +20,9 @@ class LetterCounterTest {
             SequenceCounterStrategy(),
             StreamCounterStrategy()
         )
-
+        val counter = LetterCounter(ForLoopCounterStrategy())
         for (strategy in strategies) {
-            val counter = LetterCounter(strategy)
+            counter.comparatorStrategy = strategy
             val strategyName = strategy::class.simpleName
 
             println("--- Testing $strategyName ---")
@@ -52,9 +52,9 @@ class LetterCounterTest {
             SequenceCounterStrategy(),
             StreamCounterStrategy()
         )
-
+        val counter = LetterCounter(ForLoopCounterStrategy())
         strategies.forEach { strategy ->
-            val counter = LetterCounter(strategy)
+            counter.comparatorStrategy = strategy
 
             val time = measureNanoTime {
                 val result = counter.countLetters(bigFile)
